@@ -10,6 +10,35 @@
 
 	<link rel="stylesheet" type="text/css" href="default.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	<style>
+				
+		/* Create two equal columns that floats next to each other */
+		.columnn {
+			display: grid;
+			justify-content: center;
+		  float: left;
+		  width: 560px;
+		  padding: 2px;
+		  margin-right: 2px;
+		 
+		  
+		}
+		
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+		  display:-ms-grid;
+		  clear: both;
+		}
+		
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .columnn {
+		    width: 100%;
+		  }	
+			
+		}
+		</style>
 </head>
 
 <body>
@@ -73,8 +102,11 @@
 				<div class="about-me">
 					<h4>More about me</h4>
 
-					<p>Love myself I do. Not everything, but I love the good as well as the bad. I love my crazy lifestyle, and I love my hard discipline. I love my freedom of speech and the way my eyes get dark when I'm tired. I love that I have learned to trust people with my heart, even if it will get broken. I am proud of everything that I am and will become.</p>
-				
+					<p>Love myself I do. Not everything, but I love the good as well as the bad. I love my crazy
+						lifestyle, and I love my hard discipline. I love my freedom of speech and the way my eyes get
+						dark when I'm tired. I love that I have learned to trust people with my heart, even if it will
+						get broken. I am proud of everything that I am and will become.</p>
+
 					<hr>
 
 					<h4>TOP EXPERTISE</h4>
@@ -105,7 +137,8 @@
 					<img id="social_img" src="images/follow.jpg">
 					<h3>Find me on Twitter & Youtube</h3>
 
-					<a target="_blank" href="https://www.youtube.com/channel/UCVJ_qKK-EFJsvbQJN1rcGdg">YouTube: @Biliv Pokhrel</a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCVJ_qKK-EFJsvbQJN1rcGdg">YouTube: @Biliv
+						Pokhrel</a>
 					<br>
 					<a target="_blank" href="https://twitter.com/pokhrel_ji99">Twitter: @pokhrel_ji99</a>
 				</div>
@@ -125,7 +158,9 @@
 						<img class="thumbnail" src="images/dash.jpg">
 						<div class="post-preview">
 							<h6 class="post-title">Assistant Manager</h6>
-							<p class="post-intro">Supervises and manages employees. Day-to-day, this might include organizing the team schedule, authorizing vacations, handling staff queries and taking disciplinary action.</p>
+							<p class="post-intro">Supervises and manages employees. Day-to-day, this might include
+								organizing the team schedule, authorizing vacations, handling staff queries and taking
+								disciplinary action.</p>
 							<!-- <a href="post.html">Read More</a> -->
 						</div>
 					</div>
@@ -136,7 +171,9 @@
 						<img class="thumbnail" src="images/interns.jpg">
 						<div class="post-preview">
 							<h6 class="post-title">Intership In China</h6>
-							<p class="post-intro">The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.
+							<p class="post-intro">The only way to do great work is to love what you do. If you haven’t
+								found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know
+								when you find it.
 							</p>
 							<!-- <a href="post.html">Read More</a> -->
 						</div>
@@ -148,65 +185,66 @@
 						<img class="thumbnail" src="images/growth.jpg">
 						<div class="post-preview">
 							<h6 class="post-title">Travelling</h6>
-							<p class="post-intro">Leadership is creating an environment in which people want to be part of the organization.Leadership creates an environment that makes people want to, rather than have to, do.</p>
+							<p class="post-intro">Leadership is creating an environment in which people want to be part
+								of the organization.Leadership creates an environment that makes people want to, rather
+								than have to, do.</p>
 							<!-- <a href="post.html">Read More</a> -->
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div>
-			<h3 style="text-align: center;">Some of my YouTube Videos</h3>
-		</div>
-		<div class="row">
-			<div class="col">
+
+			
 				<div>
-					<iframe width="500" height="315" src="https://www.youtube.com/embed/F-7Vt5nTfDM"
+					<h3 style="text-align: center;">Some of my YouTube Videos</h3>
+				</div>
+				<div class="row">
+					<div class="columnn" >
+						<iframe  src="https://www.youtube.com/embed/F-7Vt5nTfDM"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="col">
-				<div>
-					<iframe width="500" height="315" src="https://www.youtube.com/embed/sf_HZ1o1_-M"
+					</div>
+					<div class="columnn">
+						<iframe src="https://www.youtube.com/embed/sf_HZ1o1_-M"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
-				</div>
-			</div>
+					</div>
+				  </div>
+			
 		</div>
 	</section>
 
 
 	<section class="s2">
 		<div class="main-container">
-			
+
 			<h3 style="text-align: center;">Get In Touch</h3>
-			<Div class="row">
-				
-				<div class="col">
-					<form id="contact-form">
-						<a name="contact"></a>
-						<label>Name</label>
-						<input class="input-field" type="text" name="name">
-		
-						<label>Subject</label>
-						<input class="input-field" type="text" name="subject">
-		
-						<label>Email</label>
-						<input class="input-field" type="text" name="email">
-		
-						<label>Message</label>
-						<textarea class="input-field" name="message"></textarea>
-		
-						<input id="submit-btn" type="submit" value="Send">
-					</form>
-				</div>
-				
-			</Div>
+
+
+			<div class="col">
+				<form id="contact-form">
+					<a name="contact"></a>
+					<label>Name</label>
+					<input class="input-field" type="text" name="name">
+
+					<label>Subject</label>
+					<input class="input-field" type="text" name="subject">
+
+					<label>Email</label>
+					<input class="input-field" type="text" name="email">
+
+					<label>Message</label>
+					<textarea class="input-field" name="message"></textarea>
+
+					<input id="submit-btn" type="submit" value="Send">
+				</form>
+			</div>
+
+
 		</div>
-		
+
 	</section>
 
 	<script type="text/javascript" src="script.js"></script>
