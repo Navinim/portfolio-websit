@@ -11,8 +11,6 @@
 
 	--previewBg: rgb(251, 249, 243, 0.8);
 	--previewShadow: #f0ead6;
-
-
 	--buttonColor: black;
 
 
@@ -92,15 +90,6 @@ h6 {
 	border-bottom: 1px solid var(--borderColor);
 	overflow: hidden;
 }
-
-/* .s2 {
-	background-color: var(--secondaryColor);
-	border-bottom: 1px solid var(--borderColor);
-	overflow: hidden;
-} */
-
-
-
 
 .main-container {
 	width: 1200px;
@@ -339,12 +328,12 @@ h6 {
 }
 .video-wrapper{
 	display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(auto-fit, 450px);
     gap: 30px;
     justify-content: center;
     padding-bottom: 15px;
+	width: 100%;
 }
-
 .thumbnail {
 	display: block;
 	width: 100%;
@@ -369,24 +358,20 @@ h6 {
 
 
 #contact-form {
-	display: block;
+	/* display: block; */
 	max-width: 450px;
 	margin: 0 auto;
 	border: 1px solid var(--borderColor);
-	padding: 5px;
+	padding: 20px;
 	border-radius: 5px;
 	background-color: var(--mainColor);
 	margin-bottom: 50px;
 
 }
 
-#contact-form label {
-	line-height: 2.7em;
-}
-
 .input-field {
 	width: 100%;
-	padding: 0px;
+	padding: 5px;
 	background-color: var(--secondaryColor);
 	border-radius: 5px;
 	border: 1px solid var(--borderColor);
@@ -454,7 +439,7 @@ h6 {
 	/* min-height:170px; */
   }
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
 	 #one { 
 	  float: none;
 	  margin-right:0;
@@ -463,8 +448,14 @@ h6 {
 	  border-bottom:2px solid #000;    
 	}
   }
+  @media  screen and (max-width: 700px) {
+	  .video-wrapper{
+		grid-template-columns: 1fr;
+		justify-content: normal;
+	}
+  }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	#preview-shadow {
 		max-width: 280px;
 		height: 180px;
