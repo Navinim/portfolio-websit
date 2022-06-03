@@ -38,7 +38,7 @@ h4,
 h5,
 h6,
 strong {
-	color: var(--mainText);
+	color: #FF6A00;
 	font-family: 'Russo One', sans-serif;
 	font-weight: 500;
 }
@@ -49,7 +49,7 @@ span,
 label,
 input,
 textarea {
-	color: var(--secondaryText);
+	color: #FF6A00;
 	font-family: 'Roboto Mono', monospace;
 }
 
@@ -337,12 +337,12 @@ h6 {
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
-.youtube-post{
+.video-wrapper{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 320px);
-	gap: 20px;
-	justify-content: center;
-	padding-bottom: 50px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 .thumbnail {
@@ -363,7 +363,7 @@ h6 {
 }
 
 .post-intro {
-	color: #4b5156;
+	color: #FF6A00;
 	font-size: 14px;
 }
 
