@@ -10,35 +10,6 @@
 
 	<link rel="stylesheet" type="text/css" href="default.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
-	<style>
-				
-		/* Create two equal columns that floats next to each other */
-		.columnn {
-			display: grid;
-			justify-content: center;
-		  float: left;
-		  width: 560px;
-		  padding: 2px;
-		  margin-right: 2px;
-		 
-		  
-		}
-		
-		/* Clear floats after the columns */
-		.row:after {
-			content: "";
-		  display:-ms-grid;
-		  clear: both;
-		}
-		
-		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-		@media screen and (max-width: 600px) {
-		  .columnn {
-		    width: auto;
-		  }	
-			
-		}
-		</style>
 </head>
 
 <body>
@@ -93,9 +64,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<section class="s2">
+		<hr>
 		<div class="main-container">
 
 			<div class="about-wrapper">
@@ -145,14 +114,10 @@
 			</div>
 
 		</div>
-	</section>
-
-	<section class="s1">
+		<hr>
 		<div class="main-container">
 			<h3 style="text-align: center;">Some of my past Job</h3>
-
 			<div class="post-wrapper">
-
 				<div>
 					<div class="post">
 						<img class="thumbnail" src="images/dash.jpg">
@@ -193,56 +158,40 @@
 					</div>
 				</div>
 			</div>
-
-			
-				<div>
-					<h3 style="text-align: center;">Some of my YouTube Videos</h3>
-				</div>
-				<div class="row">
-					<div class="columnn" >
-						<iframe  src="https://www.youtube.com/embed/F-7Vt5nTfDM"
-						title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-					</div>
-					<div class="columnn">
-						<iframe src="https://www.youtube.com/embed/sf_HZ1o1_-M"
-						title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-					</div>
-				  </div>
-			
 		</div>
-	</section>
-
-
-	<section class="s2">
+		<hr>
 		<div class="main-container">
-
+			<h3 style="text-align: center;">YouTube Videos</h3>
+			<div class="youtube-post">
+				<div>
+					<iframe src="https://www.youtube.com/embed/F-7Vt5nTfDM" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<div>
+					<iframe src="https://www.youtube.com/embed/sf_HZ1o1_-M" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="main-container">
 			<h3 style="text-align: center;">Get In Touch</h3>
-
-
 			<div class="col">
 				<form id="contact-form">
 					<a name="contact"></a>
 					<label>Name</label>
 					<input class="input-field" type="text" name="name">
-
 					<label>Subject</label>
 					<input class="input-field" type="text" name="subject">
-
 					<label>Email</label>
 					<input class="input-field" type="text" name="email">
-
 					<label>Message</label>
 					<textarea class="input-field" name="message"></textarea>
-
-					<input id="submit-btn" type="submit" value="Send">
+					<button id="submit-btn" type="submit" value="Send">Send</button>
 				</form>
 			</div>
-
-
 		</div>
 
 	</section>
