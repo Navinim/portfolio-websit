@@ -328,11 +328,12 @@ h6 {
 }
 .video-wrapper{
 	display: grid;
+	width: 100%;
     grid-template-columns: repeat(auto-fit, 450px);
     gap: 30px;
     justify-content: center;
     padding-bottom: 15px;
-	width: 100%;
+	
 }
 .thumbnail {
 	display: block;
@@ -355,7 +356,6 @@ h6 {
 	color: #FF6A00;
 	font-size: 14px;
 }
-
 
 #contact-form {
 	/* display: block; */
@@ -391,7 +391,9 @@ h6 {
 	background-color: var(--buttonColor);
 	border: none;
 }
-
+.footer{
+	text-align: center;
+}
 
 @media screen and (max-width: 1200px) {
 	.main-container {
@@ -415,47 +417,14 @@ h6 {
 	}
 
 }
-
-.wrapper { 
-	/* border : 2px solid #000;  */
-	overflow:hidden;
-  }
-  
-  .wrapper div {
-	 min-height: 200px;
-	 padding: 10px;
-  }
-  #one {
-	/* background-color: gray; */
-	float:left; 
-	margin-right:20px;
-	width:140px;
-	
-  }
-  #two { 
-	background-color: white;
-	overflow:hidden;
-	margin:auto;
-	/* min-height:170px; */
-  }
-  
-  @media screen and (max-width: 600px) {
-	 #one { 
-	  float: none;
-	  margin-right:0;
-	  width:auto;
-	  border:0;
-	  border-bottom:2px solid #000;    
-	}
-  }
-  @media  screen and (max-width: 700px) {
+ @media  screen and (max-width: 980px) {
 	  .video-wrapper{
 		grid-template-columns: 1fr;
 		justify-content: normal;
 	}
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 	#preview-shadow {
 		max-width: 280px;
 		height: 180px;
